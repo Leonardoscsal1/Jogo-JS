@@ -190,8 +190,8 @@ const rl = readline.createInterface({
         jogo.rodada = 0
         jogo.premiacao.errar = 0
         jogo.premiacao.parar = 0
-        jogo.premiacao.acertar = 0
-        jogo.premiacao.valorGanho = 0
+        jogo.premiacao.acertar = 10
+        jogo.premiacao.valorGanho = 10
         jogo.perguntas = randomizaPerguntas([...perguntas])
     }
 
