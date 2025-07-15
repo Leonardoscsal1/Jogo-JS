@@ -9,4 +9,4 @@
 
 4. Como executar é apenas utilizando o comando npm start
 
-5. Eu utilizei ferramentas como o https://www.w3schools.com/js/ e também a IA do google como por exemplo se voce pesquisar como utilizar  uma funçao em javascript ela vai te mostrar como funciona além de te dar um exmeplo detalhado de maneiras de como aplicar.
+5. Eu utilizei ferramentas como o https://www.w3schools.com/js/ .
