@@ -220,6 +220,7 @@ while (!jogo.encerrado) {
     const resposta = await rl.question("Digite a letra da resposta ou P para parar: ");
 
         if(resposta.toUpperCase() == "P"){
+            console.log(`A alternativa correta da pergunta era ${perguntaAtual.resposta}`)
             console.log(`${jogo.nome} que pena que você decidiu parar, seu prêmio foi de $${jogo.premiacao.parar} e você parou na rodada ${jogo.rodada} faltava ${5-jogo.rodada} rodadas para você ser o vencedor! `)
             jogo.encerrado = true
         }
