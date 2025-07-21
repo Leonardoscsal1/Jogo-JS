@@ -268,8 +268,8 @@ while (!jogo.encerrado) {
         if(resposta.toUpperCase() == "P"){
             console.log(`A alternativa correta da pergunta era ${perguntaAtual.resposta}`)
             console.log(`${jogo.nome} que pena que você decidiu parar, seu prêmio foi de R$${jogo.premiacao.parar} e você parou na rodada ${jogo.rodada} faltava ${5-jogo.rodada} rodadas para você ser o vencedor! `)
-            imprimirRanking()
             salvarRanking(jogo.premiacao.parar)
+            imprimirRanking()
             jogo.encerrado = true
             
         }
@@ -285,13 +285,11 @@ while (!jogo.encerrado) {
                console.log(`Parabéns ${jogo.nome} você ganhou o jogo, seu prêmio foi de R$${jogo.premiacao.acertar} e você completou todas as rodadas para ser vencedor!`)
                const jogarNovamente = await rl.question("Você gostaria de jogar novamente? (s/n)")
                salvarRanking(jogo.premiacao.acertar) 
+               imprimirRanking()
                if(jogarNovamente.toUpperCase() === 'S'){
                     reniciarJogo()
-                    imprimirRankingb()
-
                 }
                 else{
-                    imprimirRanking()
                     console.log("Obrigado por jogar!!")
                     jogo.encerrado = true
                 }
@@ -309,8 +307,8 @@ while (!jogo.encerrado) {
             console.log(`A resposta correta era ${perguntaAtual.resposta}`)
             console.log(`Seu prêmio foi de R$${jogo.premiacao.errar} e você perdeu na rodada ${jogo.rodada} faltava ${5-jogo.rodada} rodadas para você ser o vencedor!`)
             const jogarNovamente = await rl.question("Você gostaria de jogar novamente? (s/n)")
-            imprimirRanking()
             salvarRanking(jogo.premiacao.errar)
+            imprimirRanking()
             if(jogarNovamente.toUpperCase() === 'S'){
                 reniciarJogo()    
                 
